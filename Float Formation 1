@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution
+{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        float value = scanner.nextFloat();
+
+        System.out.printf("%.6f\n", value);
+        System.out.printf("%.4f\n", value);
+        System.out.printf("%.2f\n", value);
+
+        System.out.println(Math.round(value));
+        scanner.close();
+    }
+}
