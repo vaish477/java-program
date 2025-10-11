@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        double balance = sc.nextDouble();  
+        int choice = sc.nextInt();         
+        
+        switch (choice) {
+            case 1:
+                double depositAmt = sc.nextDouble();
+                balance += depositAmt;
+                System.out.printf("%.0f%n", balance);
+                break;
+            case 2:
+                double withdrawAmt = sc.nextDouble();
+                if (withdrawAmt > balance) {
+                    System.out.println("Insufficient Balance");
+                } else {
+                    balance -= withdrawAmt;
+                    System.out.printf("%.0f%n", balance);
+                }
+                break;
+            default:
+                System.out.println("Invalid Input");
+                break;
+        }
+    }
+}
