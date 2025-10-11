@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String input = sc.next(); 
+        if (input.length() != 1) {
+            System.out.println("Invalid Input");
+            return;
+        }
+
+        char ch = input.charAt(0);
+
+        if (!Character.isLetter(ch)) {
+            System.out.println("Invalid Input");
+        } else {
+            char lower = Character.toLowerCase(ch);
+            if (lower == 'a' || lower == 'e' || lower == 'i' || lower == 'o' || lower == 'u') {
+                System.out.println("The Character " + ch + " is Vowel");
+            } else {
+                System.out.println("The Character " + ch + " is Consonant");
+            }
+        }
+    }
+}
