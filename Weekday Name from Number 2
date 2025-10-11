@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args){
+ Scanner sc = new Scanner(System.in);
+        int dayNum = sc.nextInt();
+
+        String dayName;
+        switch (dayNum) {
+            case 1: dayName = "Monday"; break;
+            case 2: dayName = "Tuesday"; break;
+            case 3: dayName = "Wednesday"; break;
+            case 4: dayName = "Thursday"; break;
+            case 5: dayName = "Friday"; break;
+            case 6: dayName = "Saturday"; break;
+            case 7: dayName = "Sunday"; break;
+            default: 
+                System.out.println("Enter a valid Input");
+                return;
+        }
+        
+        System.out.println(dayName);
+    }
+}
